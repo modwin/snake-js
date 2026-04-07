@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Snake Home</title>
+  <meta name="author" content="Björn Moderatho Winther">
+  <meta name="application-name" content="Björns personliga hemsida">
+  <meta name="description" content="Björns fenomenala hemsida för WPROG1 HT2025.">
+  <meta name="generator" content="IntelliJ IDEA">
+  <meta name="keywords" content="bunke,fenomenal,hemsida, snake">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="nofollow, noindex">
+  <link rel="stylesheet" href="css/style.css">
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="nav-bar">
+  <h1>Snake</h1>
+  <ul class="menu-bar" id="menu-bar">
+    <li   class="menu-bar-li">
+      <div id="btn1" class="menu-item">Spelet</div>
+      <ul id="play-drop-down" class="drop-down">
+        <li><a class="drop-down-a" href="snake.html">Spela nu</a></li>
+        <li><a class="drop-down-a" href="settings.html">Inställningar</a></li>
+      </ul>
+    </li>
+    <li  class="menu-bar-li"><div id="btn2" class="menu-item">Om projektet</div>
+
+      <ul id="about-drop-down" class="drop-down">
+        <li><a class="drop-down-a">Maila utvecklaren</a></li>
+      </ul>
+    </li>
+
+  </ul>
+</div>
+<div id="menu-screen">
+  <div class="content-panel active">
+    <h2>Hur du spelar spelet:</h2>
+    <ul>
+
+      <li>Styr ormen med WASD eller piltangenterna.</li>
+      <li>Starta spelet genom att börja styra ormen i valfri riktning.</li>
+      <li>Du får ett poäng och ormen växer för varje "äpple" du samlar.</li>
+      <li>Du förlorar spelet om huvudet kolliderar med ormens kropp eller spelplanens väggar.</li>
+      <li>Försök att slå ditt tidigare rekord.</li>
+      <li>Om du vill ändra utseendet, beteendet eller återställa rekord kan du göra det under inställningar.</li>
+      <li>Inställningarna hittas under menyn "Spelet" på navigationslisten.</li>
+    </ul>
+  </div>
+</div>
+<footer>
+  <aside>
+    <p>&copy; Björn Moderatho Winther. All rights reserved . <a href="mailto:bjorn.mwinther@gmail.com">bjorn.mwinther@gmail.com.</a></p>
+    <u id="dateTime"></u>
+  </aside>
+</footer>
+<script src="js/navigation_bar.js"></script>
+<script src="js/home.js"></script>
+
+</body>
+</html>

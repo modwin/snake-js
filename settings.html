@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Settings</title>
+  <meta name="author" content="Björn Moderatho Winther">
+  <meta name="application-name" content="Björns personliga hemsida">
+  <meta name="description" content="Björns fenomenala hemsida för WPROG1 HT2025.">
+  <meta name="generator" content="IntelliJ IDEA">
+  <meta name="keywords" content="bunke,fenomenal,hemsida">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="nofollow, noindex">
+  <link rel="stylesheet" href="css/style.css">
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+</head>
+<body id="settings">
+<div id="nav-bar" class >
+  <h1 id="header">Snake</h1>
+  <ul class="menu-bar" id="menu-bar">
+    <li   class="menu-bar-li">
+      <div id="btn1" class="menu-item">Spela
+      </div>
+      <ul id="play-drop-down" class="drop-down">
+        <li><a class="drop-down-a" href="snake.html">Spela nu</a></li>
+        <li><a class="drop-down-a" href="settings.html">Inställningar</a></li>
+      </ul>
+    </li>
+    <li  class="menu-bar-li"><div id="btn2" class="menu-item">Om projektet</div>
+
+      <ul id="about-drop-down" class="drop-down">
+        <li><a class="drop-down-a">Maila utvecklaren</a></li>
+      </ul>
+    </li>
+
+  </ul>
+</div>
+
+<div id="menu-screen">
+  <div class="tabs">
+    <div class="tab active" data-tab="tab1">Utseende</div>
+    <div class="tab" data-tab="tab2">Rekord</div>
+    <div class="tab" data-tab="tab3">Egenskaper</div>
+  </div>
+  <div class="content-panel active" id="tab1">
+    <div class="container-center">
+      <form id="settings-form">
+        <h2>Bestäm färg</h2>
+        <div class="form-group" id="snake-color-group" hidden>
+          <label for="snake-color" id="snake-color-label">Välj ormens färg:</label>
+          <select id="snake-color" name="snake-color">
+            <optgroup label="Färger">
+              <option value="green">Grön</option>
+              <option value="black">Svart</option>
+              <option value="orange">Orange</option>
+              <option value="purple">Lila</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="form-group" id="apple-color-group" hidden>
+          <label for="apple-color" id="apple-color-label">Välj äpplets färg:</label>
+          <select id="apple-color" name="apple-color">
+            <optgroup label="Färger">
+              <option selected value="red">Röd</option>
+              <option value="green">Grön</option>
+              <option value="black">Svart</option>
+              <option value="orange">Orange</option>
+              <option value="purple">Lila</option>
+            </optgroup>
+          </select>
+        </div>
+        <button type="submit" id="save" class="save-button">Spara ändringar</button>
+      </form>
+
+    </div>
+  </div>
+
+  <div class="content-panel" id="tab2">
+    <form>
+      <h2>Poäng</h2>
+      <div class="form-group">
+        <h3 id="highscore">-</h3>
+        <button id="reset-highscore" class="save-button">Rensa highscore</button>
+
+      </div>
+    </form>
+  </div>
+
+  <div class="content-panel" id="tab3">
+    <form>
+      <h2>Egenskaper</h2>
+      <div class="form-group">
+          <label for="snake-speed" id="snake-speed-label">Välj ormens hastighet:</label>
+          <select id="snake-speed" name="snake-speed">
+            <optgroup label="Ormens hastighet">
+              <option value="0.5">50%</option>
+              <option value="0.75">75%</option>
+              <option selected value='1'>100%</option>
+              <option value="1.25">125%</option>
+              <option value="1.5">150%</option>
+              <option value="2">200%</option>
+            </optgroup>
+          </select>
+        <button id="snake-properties" class="save-button">Spara</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+
+
+
+<footer>
+  <aside>
+    <p>&copy; Björn Moderatho Winther. All rights reserved . <a href="mailto:bjorn.mwinther@gmail.com">bjorn.mwinther@gmail.com.</a></p>
+    <u id="dateTime"></u>
+  </aside>
+</footer>
+<script src="js/navigation_bar.js"></script>
+<script src="js/settings.js"></script>
+</body>
+</html>
